@@ -308,6 +308,114 @@
 .menu__btn {
     display: none;
 }
+//modal
+#modal {
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding: 90px 0 100px;
+}
+.login__wrapper {
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label {
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before {
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 14px;
+            left: 18px;
+            top: 10px;
+        }
+    }
+    .login__label-name::before {
+        content: '\f007';
+    }
+    .login__label-pass::before {
+        content: '\f023';
+    }
+    input {
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        outline-color: #75ac36;
+        &::placeholder {
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    button {
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        width: 140px;
+        text-transform: uppercase;
+        margin-right: 10px;
+        @include f700;
+        color: #000;
+        text-align: center;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    }
+}
+.lost-pass {
+    margin-top: 20px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+.create-acc {
+    text-align: center;
+    margin-top: 19px;
+    padding: 13px 0 15px 35px;
+    width: 245px;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    &::before {
+        content: '\f044';
+        font-family: "icomoon";
+        position: absolute;
+        left: 35px;
+        top: 14px;
+    }
+}
+.login__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 48px;
+    @include f700;
+}
+.fancybox-button {
+    opacity: 0;
+}
+.fancybox-close-small:hover {
+    color: #fff;
+    opacity: 0;
+}
+.close-btn {
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2;
+    position: absolute;
+    top: 3px;
+    right: 13px;
+}
+//end modal
 //end header
 //start search
 .search {

@@ -1,7 +1,4 @@
 @media only screen and (max-width: 1150px) {
-    .header__text {
-        display: none;
-    }
     .footer__inner {
         flex-wrap: wrap;
     }
@@ -30,6 +27,9 @@
     }
     .header__logo {
         margin-left: 60px;
+    }
+    .header__text {
+        display: none;
     }
     .user__menu {
         top: 60px;
